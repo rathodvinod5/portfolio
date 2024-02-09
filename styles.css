@@ -21,6 +21,21 @@ html {
   border-color: rgb(88, 93, 101)
 }
 
+.bg-img {
+  background-image: url('./assets/IMG_2958.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  mix-blend-mode: luminosity;
+  background-color: #68e0cf;
+}
+
+.bg-inn-img {
+  background-color: #68e0cf;
+}
+
 .header {
   padding: 0 50px 0 50px;
   position: fixed;

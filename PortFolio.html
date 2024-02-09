@@ -19,7 +19,7 @@
   <script type="text/JavaScript" src="./scripts.js"></script>
 </head>
 
-<body>
+<body class="relative">
   <nav class="flex justify-between items-center py-5 custom-bg rounded-[80px] text-white header">
     <div class="text-2xl font-bold text-[24px] hidden md:block">
       <a href="#home">Vinod Rathod</a>
@@ -41,11 +41,13 @@
     </ul>
   </nav>
   <div class="h-full max-h-full">
-    <div class="flex flex-col lg:flex-row">
-      <div class="flex-[2] bg-white">
+    <div class="flex flex-col lg:flex-row relative">
 
+      <div class="flex-[2] h-[100vh] bg-white sticky top-0 left-0 right-0 bottom-0 z-0 bg-img">
       </div>
-      <div class="flex-[3] h-full max-h-full lg:pr-[92px] text-white prim-background">
+
+      <!-- <div class="flex-[2] bg-white"></div> -->
+      <div class="flex-[3] h-full max-h-full lg:pr-[92px] text-white prim-background z-10">
         <!-- About Container margin: 40px 0 0 -10vw; -->
         <div class="h-full flex flex-row justify-center items-center border-r about-cont" id="home">
           <div class="h-[100vh] flex flex-col justify-center pr-[46px] mt-[42px] prim-background">
