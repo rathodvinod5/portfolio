@@ -21,8 +21,8 @@
 
 <body>
   <nav class="flex justify-between items-center py-5 custom-bg rounded-[80px] text-white header">
-    <div class="text-2xl font-bold text-[24px]">
-      Vinod Rathod
+    <div class="text-2xl font-bold text-[24px] hidden md:block">
+      <a href="#home">Vinod Rathod</a>
     </div>
     <ul class="flex space-x-5">
       <li class="cursor-pointer hover:underline hover:underline-offset-8 hover:decoration-2">
@@ -40,13 +40,13 @@
     </ul>
   </nav>
   <div class="h-full max-h-full">
-    <div class="flex flex-row">
+    <div class="flex flex-col lg:flex-row">
       <div class="flex-[2] bg-white"></div>
-      <div class="flex-[3] h-full max-h-full pr-[92px] text-white prim-background">
-        <!-- About Container -->
+      <div class="flex-[3] h-full max-h-full lg:pr-[92px] text-white prim-background">
+        <!-- About Container margin: 40px 0 0 -10vw; -->
         <div class="h-full flex flex-row justify-center items-center border-r about-cont" id="home">
           <div class="h-[100vh] flex flex-col justify-center pr-[46px] mt-[42px] prim-background">
-            <div class="p-[3.6vw] mt-[-100px] prim-background title-cont">
+            <div class="p-[3.6vw] mt-[-100px] prim-background title-cont pl-[46px] lg:ml-[-10vw]">
               <h1 class="text-[3.2vw] font-bold leading-[1.2]">Vinod</h1>
               <h1 class="text-[3.2vw] font-bold">Rathod</h1>
             </div>
@@ -56,10 +56,11 @@
             <p class="ml-[46px] text-[14px] mb-[20px] font-extralight w-[80%] leading-[24px]">
               Hello! I am Mobile App and Web Developer from India. I have rich experience in developing high
               performance, pixel perfect Mobile apps and Website using latest Technologies such as React-Native,
-              ReactJS, NextJS and SwiftUI. I love to talk with you about our unique idea to transform it to reality.
+              ReactJS, NextJS, Swift / SwiftUI and the MERN stack. I love to talk with you about our unique idea to
+              transform it to reality.
             </p>
             <p class="ml-[46px] text-[14px] font-extralight w-[80%] leading-[24px]">
-              Harnessing the power of React-Native, ReactJS, NextJS, Swift / SwiftUI and the MERN stack, I offer a
+              Harnessing the power of technologies and experience, I offer a
               comprehensive approach to application
               development that prioritizes user experience and functionality
             </p>
@@ -67,14 +68,14 @@
         </div>
 
         <!-- Services Container -->
-        <div class="h-[100vh] border-r custom-border-color">
+        <div class="lg:h-[100vh] border-r custom-border-color">
           <div class="h-[50px] border-t custom-border-color" id="services"></div>
           <div class="h-full pt-[100px] pb-[70px] px-[46px]">
             <h1 class="text-[3.2vw] font-bold">Services</h1>
             <p class="text-[16px] mb-[30px] teal-color">What I do</p>
 
             <div class="w-full">
-              <div class="flex flex-row mt-[60px]">
+              <div class="flex flex-col lg:flex-row mt-[60px]">
                 <div class="flex-1 item" id="item1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-[36px] h-[36px] teal-color">
@@ -85,14 +86,14 @@
                     <p class="text-lg font-semibold">Mobile App</p>
                     <p class="text-lg font-semibold">Development</p>
                   </div>
-                  <p class="text-sm w-[80%]">
+                  <p class="text-sm w-full lg:w-[80%]">
                     Mobile application are developed with Hybrid technologies which are very performant and pixel
                     perfect. Specialised in developing fintech, chat application, e-commerce and various other type
                     applications.
                   </p>
                 </div>
 
-                <div class="flex-1 item" id="item2">
+                <div class="flex-1 item mt-[60px] lg:mt-[0px]" id="item2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-[36px] h-[36px] teal-color">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -102,7 +103,7 @@
                     <p class="text-lg font-semibold">Website</p>
                     <p class="text-lg font-semibold">Development</p>
                   </div>
-                  <p class="text-sm w-[80%]">
+                  <p class="text-sm w-full lg:w-[80%]">
                     Development process includes: Website developement using ReactJS/NextJS with client
                     / server-side scripting. Specialised in developing websites like admin dashboard, e-commerce, chat
                     application, personal protfolio, blogs.
@@ -124,14 +125,14 @@
                     <p class="text-lg font-semibold">iOS App</p>
                     <p class="text-lg font-semibold">Development</p>
                   </div>
-                  <p class="text-sm w-[80%]">
+                  <p class="text-sm w-full lg:w-[80%]">
                     Native mobile application are developed with Swift/SwiftUI technologies which are very performant,
                     pixel perfect. Specialised in developing fintech, chat application, e-commerce type applications.
                   </p>
                   </p>
                 </div>
 
-                <div class="flex-1"></div>
+                <div class="none lg:flex-1"></div>
               </div>
             </div>
           </div>
@@ -281,7 +282,7 @@
             <p class="text-[16px] mb-[30px] teal-color">Working with</p>
 
             <div class="w-full">
-              <div class="flex flex-row mt-[60px]">
+              <div class="flex flex-col lg:flex-row mt-[60px]">
 
                 <div class="flex-1 relative">
                   <p class="text-[13px] absolute top-[36px] left-[-20px] teal-color rotate-text">Present</p>
@@ -295,7 +296,7 @@
                   </p>
                 </div>
 
-                <div class="flex-1 relative">
+                <div class="flex-1 relative mt-[60px] lg:mt-[0px]">
                   <p class="text-xs absolute top-[42px] left-[-25px] teal-color rotate-text">2018-2019</p>
                   <div class="mt-[15px] ml-[30px] mb-[30px]">
                     <p class="text-xl font-semibold">MountBlue</p>
@@ -319,7 +320,7 @@
             <p class="text-[16px] mb-[30px] teal-color">STUDIED AT</p>
 
             <div class="w-full">
-              <div class="flex flex-row mt-[60px]">
+              <div class="flex flex-col lg:flex-row mt-[60px]">
 
                 <div class="flex-1 relative">
                   <div class="mt-[15px] mb-[30px]">
@@ -333,7 +334,7 @@
                   </p>
                 </div>
 
-                <div class="flex-1 relative">
+                <div class="flex-1 relative mt-[60px] lg:mt-[0px]">
                   <div class="mt-[15px] mb-[30px]">
                     <p class="text-xl font-semibold">NES</p>
                     <p class="text-xl font-semibold">Gulbarga</p>
@@ -356,7 +357,7 @@
             <p class="text-[16px] mb-[30px] teal-color">READING & WRITING</p>
 
             <div class="w-full">
-              <div class="flex flex-row mt-[60px]">
+              <div class="flex flex-col lg:flex-row mt-[60px]">
 
                 <div class="flex-1 relative">
                   <div class="mt-[15px] mb-[30px]">
@@ -369,7 +370,7 @@
                   </p>
                 </div>
 
-                <div class="flex-1 relative">
+                <div class="flex-1 relative mt-[60px] lg:mt-[0px]">
                   <div class="mt-[15px] mb-[30px]">
                     <p class="text-xl font-semibold">Hindi</p>
                   </div>
