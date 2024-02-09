@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  height: 100%;
+  font-family: Poppins;
+  scroll-behavior: smooth
+}
+
+.prim-background {
+  background-color: #373b40 !important;
+}
+
+.sec-background {
+  background: #585d65;
+}
+
+.custom-border-color {
+  border-color: rgb(88, 93, 101)
+}
+
+.header {
+  padding: 0 50px 0 50px;
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  top: 40px;
+  height: 80px;
+  z-index: 100;
+  align-items: center;
+  background: #585d65;
+  border-radius: 80px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -khtml-border-radius: 80px;
+  transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -moz-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -o-transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+.header li {
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav-items {
+  font-family: Poppins;
+  font-weight: 800;
+}
+
+.teal-color {
+  color: #68e0cf !important;
+}
+
+.teal-bg-color {
+  background-color: teal !important;
+}
+
+.title-cont {
+  margin: 40px 0 0 -10vw;
+  border-radius: 100vh;
+}
+
+.content-cont {
+  height: 100%;
+  background-color: #373b40;
+  height: 100vh;
+  z-index: 11;
+}
+
+.about-cont {
+  border-color: rgb(88, 93, 101);
+}
+
+.about-inn-cont {
+  font-family: "Poppins";
+}
+
+.rotate-text {
+  -webkit-transform: rotate(90deg);
+}
+
+/* Animated */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+
+.container h1 {
+  height: 40px;
+  margin: 0 auto;
+  margin-left: 46px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#item1 {
+  opacity: 0.2;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#item2 {
+  opacity: 0.2;
+  transform: translateX(80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#item3 {
+  opacity: 0.2;
+  transform: translateX(-80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.skillitem {
+  opacity: 0;
+  transition: opacity 1.8s ease-out;
+}
+
+/* #skillitem1 #skillitem2 #skillitem3 {
+  transition: opacity 0.5s ease-out 0.5s;
+} */
